@@ -7,7 +7,7 @@ main service: */api/v1/pokemon/{name_of_pokemon}*
 
 ```
 python3 -m venv .venv  #create a virtualenviroment
-pip install -r requirements #install dependencies
+pip install -r requirements.txt #install dependencies
 ```
 
 ## Run server
@@ -20,7 +20,7 @@ python manage.py runserver # run servers
 
 ## How to Use
 
-Server consists in to expose a webservice that received only one parameter, **pokemon name** and retrieve some info about pokemon and its evolutions
+Server consists in to expose a webservice that receive only one parameter, **pokemon name** and retrieve some info about pokemon and its evolutions
 and a command line application to fetch and store data from services of pokeapi evolution_chains, command must be executed at first 
 otherwise there would not be any data to consume  
 webservice does not required an authentication method
