@@ -6,8 +6,9 @@ main service: */api/v1/pokemon/{name_of_pokemon}*
 ## Install
 
 ```
-python3 -m venv .venv  #create a virtualenviroment
-pip install -r requirements.txt #install dependencies
+python3 -m venv .venv  # create a virtualenviroment
+source .venv/bin/activate # Activate virtualenviroment
+pip install -r requirements.txt # install dependencies
 ```
 
 ## Run server
