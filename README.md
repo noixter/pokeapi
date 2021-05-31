@@ -5,7 +5,7 @@ main service: */api/v1/pokemon/{name_of_pokemon}*
 
 ## Install
 
-```
+```ruby
 python3 -m venv .venv  # create a virtualenviroment
 source .venv/bin/activate # Activate virtualenviroment
 pip install -r requirements.txt # install dependencies
@@ -13,7 +13,7 @@ pip install -r requirements.txt # install dependencies
 
 ## Run server
 
-```
+```ruby
 python manage.py makemigrations pokeapi # create custom models
 python manage.py migrate # perform actions on db
 python manage.py runserver # run servers
@@ -30,7 +30,7 @@ webservice does not required an authentication method
 
 Command can run through manage.py as any other commmand of django framework and receive an integer o space separated integers as parameters
 
-```
+```python
 python manage.py fetchpokemondata -h  # runs built-in help
 python manage.py fetchpokemondata 1  # fetch and store evolution-chain(pokeapi) with id 1
 python manage.py fetchpokemondata 1 2 3  # fetch and store evolution-chains with ids 1,2,3...
@@ -42,7 +42,7 @@ It requires to initialize the server, it only response in JSON format
 
 eg. 
 
-```
+```ruby
 /api/v1/pokemon/pikachu
 {
     "pokemon": {
@@ -107,7 +107,7 @@ eg.
 There is an auxiliary service that provide a list of available pokemons to search
 
 eg.
-```
+```ruby
 api/v1/pokemon/
 
 {
@@ -128,6 +128,6 @@ api/v1/pokemon/
 
 There are 7 test cases that probes correct works of services and command line applications, to run test cases do the following:
 
-```
+```ruby
 python manage.py test
 ```
